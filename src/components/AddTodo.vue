@@ -14,15 +14,13 @@
         name: "AddTodo",
         data() {
             return {
-                title: '',
-                startId: 4
+                title: ''
             }
         },
         methods: {
             addTodo(e) {
                 e.preventDefault();
                 const newTodo = {
-                    id: this.startId++,
                     title: this.title,
                     completed: false
                 }
